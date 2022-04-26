@@ -1,0 +1,6 @@
+import re
+
+s = input("請輸入字串")
+b = re.compile(r'not \w+ at all')
+a = b.sub('good',s)
+print(a)
