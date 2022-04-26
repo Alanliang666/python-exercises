@@ -1,0 +1,14 @@
+import re
+
+s = 'Here are UPPERCASE and lowercase chars.'
+
+dict = {}
+
+for char in set(s):
+ index = []
+ for match in re.finditer(char,s):
+ index.append(match.start()+1)
+
+ dict[char] = index
+
+print(dict)
