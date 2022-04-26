@@ -1,0 +1,35 @@
+a, b = input("輸入整數a: "),input("輸入整數b: ")
+
+int_a, int_b = int(a), int(b)
+int_a, int_b = (int_b, int_a) if int_a > int_b else (int_a, int_b)
+
+def is_self_dividing(n: int):
+ n_str = str(n)
+ for divisor in list(n_str):
+ int_divisor = int(divisor)
+
+
+ if int_divisor == 0:
+ return False
+ elif n % int_divisor !=0:
+ return False
+ 
+ return True
+
+self_dividing_number =[]
+
+for i in range(int_a, int_b+1):
+ if is_self_dividing(i):
+ self_dividing_number.append(i)
+
+max_distance = -1
+max_distance_index = -1
+
+for idx in range(1, len(self_dividing_number)):
+ distance = self_dividing_number[idx] - self_dividing_number[idx-1]
+ if distance > max_distance:
+ max_distance = distance
+ max_distance_index = idx
+
+print(self_dividing_number[max_distance_index-1],
+self_dividing_number[max_distance_index])
