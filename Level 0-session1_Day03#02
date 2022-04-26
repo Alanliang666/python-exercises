@@ -1,0 +1,4 @@
+r = str(input("輸入一個包含「not that poor」的字串"))
+x = str.replace(r,"not that poor","good")
+print(x)
+
