@@ -1,0 +1,11 @@
+
+num = str(input("請輸入字串"))
+
+num_list = list(num)
+
+dic = { }
+
+for i in num_list:
+  dic[i] = dic.get(i, 0) + 1
+
+print(dic)
