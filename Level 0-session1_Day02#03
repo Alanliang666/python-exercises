@@ -1,0 +1,7 @@
+x = int(input("請輸入整數x = "))
+y = int(input("請輸入整數y = "))
+
+sum = x + y
+
+
+print(sum)
