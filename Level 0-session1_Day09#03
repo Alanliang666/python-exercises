@@ -1,0 +1,8 @@
+def f(*args):
+  res = 0
+  for i in args:
+    res += i
+  return res
+
+
+print(f(1, 2, 3)))
