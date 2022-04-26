@@ -1,0 +1,12 @@
+nums = [2,7,11,15] 
+target = 9
+# 找出index
+index = []
+
+for i in range(len(nums)):
+  for d in range(i+1, len(nums)):
+   if nums[i] + nums[d] == target:
+     index.extend([i,d])
+ 
+
+print(index)
