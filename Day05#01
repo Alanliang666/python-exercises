@@ -1,0 +1,10 @@
+import itertools
+
+s = "ABC"
+s = set(s)
+s = sorted(s)
+
+perm = list(itertools.permutations(s))
+result = [''.join(row) for row in perm]
+
+print(result)
