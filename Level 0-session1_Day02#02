@@ -1,0 +1,8 @@
+a = input("請輸入整數a = ")
+b = input("請輸入整數b = ")
+
+
+a,b = b,a
+
+print(a)
+print(b)
