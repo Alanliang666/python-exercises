@@ -1,0 +1,4 @@
+r = str(input("輸入一個網址"))
+x = str.split(r,'/')
+
+print(x[2])
